@@ -1,6 +1,13 @@
 const mongoose = require('mongoose');
 const User = require('../model/User');
+const bcrypt = require('bcryptjs');
+const {validationResult} = require('express-validator');
+const jwt = require('jsonwebtoken');
+const { secretKey } = require('../config/config');
 
+const generateJsonWebToken = (payload) => {
+    return jwt.sign(payload, secretKey, {expiresIn: "24h"});
+}
 const AuthController = {
     async registration(req,res) {
         try {
@@ -19,7 +26,16 @@ const AuthController = {
                         roles: roles,
                     });
                     newUser.save();
-                    return res.status(200).json({message: `Hello ${newUser.username + newUser.roles}`})
+                    const payload = {
+                        _id: newUser._id,
+                        username: newUser.username,
+                        email: newUser.email,
+                        password: newUser.password,
+                        roles: newUser.roles,
+                    }
+                    const token = generateJsonWebToken(payload);
+
+                    return res.status(200).json({message: `Hello ${newUser.username +' and your token' + token}`})
                 }
             })
         } catch (error) {
