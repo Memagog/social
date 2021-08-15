@@ -1,0 +1,28 @@
+$color: #444599;
+
+div.container {
+    display: flex;
+    flex-direction: row;
+ 
+}
+div.menu{  
+    margin: 5px;
+    width: 30%;
+    height: 100%;   
+    background-color: $color;
+}
+    
+div.main {
+    margin: 5px;
+    width: 40%;
+    background-color: $color;
+    height: 800px;   
+}
+ 
+div.right {
+    margin: 5px;
+    width: 30%;
+    background-color: $color;
+    height: 100%;   
+  
+}
