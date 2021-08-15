@@ -20,32 +20,29 @@
     }
 }
 .profile__container_info-block {
-   display: flex;
-   align-items: flex-start;
-   justify-content: flex-end;
-   flex-direction: column;
-   
+    display: flex;
+    justify-content: space-between;    
     height: 50%;
     background-color: rgba(0, 0, 0, 0.671);
-    p{
+
+    .profile__container_info-block_info-container{
+       margin-top: 40px;
+        p{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            color: #ffffff6e;       
+        }
+    }
+    
+    .profile__container_info-block_edit-button{
+        position: relative;       
+        color: rgb(12, 12, 12);         
+        width: 115px;
+        height: 35px;     
+        border-radius: 50px 50px 50px 50px;
         font-family:Arial, Helvetica, sans-serif;
         font-size: 17px;
-        color: #ffffff;
-        margin-top: -2px;
-    }
-    .profile__container_info-block_edit-button{
-        margin-left: 560px;  
-        button{
-            z-index: 100;
-            font-family:Arial, Helvetica, sans-serif;
-            font-size: 20px;
-            background-color: rgb(90, 86, 86);
-            border-radius: 25%;
-            width: 100px;
-            height: 40px;
-            border: #080808 solid;
-            color: #ffffff;
-        }      
-       
+        font-weight: bold; 
+        color: #131212;                
     }
 }

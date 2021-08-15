@@ -1,4 +1,4 @@
-$color: #444599;
+$color: #030303;
 
 div.container {
     display: flex;
@@ -7,21 +7,21 @@ div.container {
 }
 div.menu{  
     margin: 5px;
-    width: 30%;
+    width: 33%;
     height: 100%;   
     background-color: $color;
 }
     
 div.main {
     margin: 5px;
-    width: 40%;
+    width: 33%;
     background-color: $color;
     height: 800px;   
 }
  
 div.right {
     margin: 5px;
-    width: 30%;
+    width: 33%;
     background-color: $color;
     height: 100%;   
   
