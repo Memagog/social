@@ -27,7 +27,7 @@ export default function Profile() {
                         <p>followers: {user.followers} following: {user.following}</p>
                    </div>
                    <div>
-                        <button className="profile__container_info-block_edit-button">Edit profile</button>
+                       <button className="profile__container_info-block_edit-button">Edit profile</button>
                    </div>                     
                 </div>
            </div>

@@ -1,6 +1,6 @@
 
 import './App.scss';
-import AppContainer from './components/ProfilePage/AppContainer/AppContainer';
+import AppContainer from './components/AppContainer/AppContainer';
 
 function App() {
   return (

@@ -21,6 +21,10 @@ const routes = [
   {
     path: "/prof",
     main: () =><Profile></Profile>
+  },
+  {
+    path: "/followers",
+    main: ()=> <div>Followers</div>
   }
 ];
 export default function AppContainer() {
