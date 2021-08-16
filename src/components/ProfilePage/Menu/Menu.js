@@ -5,17 +5,17 @@ export default function Menu() {
     return (
         <div>           
             <div className="menu__button-group"> 
-                <Link to="/">                       
+                <Link to="/" style={{textDecoration: "none"}}>                       
                     <button className="menu__button-group_button">
                         <p>Home</p>
                     </button>
                 </Link>   
-                <Link to="/twit">                       
+                <Link to="/twit" style={{textDecoration: "none"}}>                       
                     <button className="menu__button-group_button">
                         <p>Twit</p>
                     </button>
                 </Link>
-                <Link to="/prof">                       
+                <Link to="/prof" style={{textDecoration: "none"}}>                       
                     <button className="menu__button-group_button">
                         <p>Profile</p>
                     </button>
