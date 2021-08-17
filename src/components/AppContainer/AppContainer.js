@@ -2,11 +2,15 @@ import React from 'react'
 import {
     BrowserRouter as Router,
     Switch,
-    Route
+    Route,
+  
   } from "react-router-dom";
 import "./AppContainer.scss";
 import Menu from '../Menu/Menu';
 import ProfileContainer from './../Profile/ProfileContainer/ProfileContainer';
+import { useHistory } from "react-router-dom";
+
+
 const routes = [
   {
     path: "/",
@@ -27,6 +31,7 @@ const routes = [
   }
 ];
 export default function AppContainer() {
+  let history = useHistory();
     return (   
         <Router>                  
             <div className="container"> 
@@ -46,8 +51,8 @@ export default function AppContainer() {
                     </Switch>
                 </div>  
 
-                <div className="right">
-                    <p>Left</p>
+                <div className="right">                 
+                   <button onClick={()=>history.push("/register")}>log out</button>
                 </div>
             </div>    
         </Router> 

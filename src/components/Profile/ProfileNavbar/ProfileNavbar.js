@@ -33,7 +33,6 @@ export default function ProfileNavbar() {
                             </li>
                         </div>                      
                     </ul>
-
                      {/* <hr /> */}
                     <Switch>
                         <Route path="/tweets">
