@@ -1,0 +1,27 @@
+.profile-navbar_container_nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;   
+    .profile-navbar_container_nav_link{   
+        // width: 100px;
+        // height: 100%;
+        // padding: 0px;        
+        list-style-type: none;
+        p{         
+            color: aliceblue;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+    } 
+    .profile-navbar_container_nav_link:hover{
+    
+        background-color: rgb(43, 41, 41);
+    }
+    
+}
+.profile-navbar_container_nav_link:active{
+
+   border-bottom: solid rgb(89, 173, 221);   
+}

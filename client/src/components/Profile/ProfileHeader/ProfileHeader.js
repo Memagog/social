@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Profile.scss"
+import "./ProfileHeader.scss"
 const user = {     
     _id: 12393743,
     name: "George",
@@ -8,7 +8,7 @@ const user = {
     following: 23,
 
 }
-export default function Profile() {
+export default function ProfileHeader() {
     return (
         <div className="profile">
            <div className="profile__container">               
@@ -27,7 +27,7 @@ export default function Profile() {
                         <p>followers: {user.followers} following: {user.following}</p>
                    </div>
                    <div>
-                        <button className="profile__container_info-block_edit-button">Edit profile</button>
+                       <button className="profile__container_info-block_edit-button">Edit profile</button>
                    </div>                     
                 </div>
            </div>
