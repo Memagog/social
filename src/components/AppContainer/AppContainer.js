@@ -5,9 +5,8 @@ import {
     Route
   } from "react-router-dom";
 import "./AppContainer.scss";
-import Profile from '../Profile/ProfileHeader';
-
 import Menu from '../Menu/Menu';
+import ProfileContainer from './../Profile/ProfileContainer/ProfileContainer';
 const routes = [
   {
     path: "/",
@@ -20,7 +19,7 @@ const routes = [
   },
   {
     path: "/prof",
-    main: () =><Profile></Profile>
+    main: () =><ProfileContainer></ProfileContainer>
   },
   {
     path: "/followers",

@@ -19,7 +19,13 @@ export default function Menu() {
                     <button className="menu__button-group_button">
                         <p>Profile</p>
                     </button>
-                </Link>                           
+                </Link>  
+                <Link to="/prof" style={{textDecoration: "none"}}>                       
+                    <button className="menu__button-group_button">
+                        <p>Profile</p>
+                    </button>
+                </Link>  
+                                 
             </div>            
                
         </div>
