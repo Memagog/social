@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./Menu.scss"
+import AddTweets from './../Twitts/AddTweets';
 export default function Menu() {
     return (
         <div>           
@@ -19,13 +20,8 @@ export default function Menu() {
                     <button className="menu__button-group_button">
                         <p>Profile</p>
                     </button>
-                </Link>  
-                <Link to="/prof" style={{textDecoration: "none"}}>                       
-                    <button className="menu__button-group_button">
-                        <p>Profile</p>
-                    </button>
-                </Link>  
-                                 
+                </Link>           
+                <AddTweets></AddTweets>                               
             </div>            
                
         </div>
