@@ -10,7 +10,6 @@ import Menu from '../Menu/Menu';
 import ProfileContainer from './../Profile/ProfileContainer/ProfileContainer';
 import { useHistory } from "react-router-dom";
 
-
 const routes = [
   {
     path: "/",
@@ -34,10 +33,12 @@ export default function AppContainer() {
   let history = useHistory();
     return (   
         <Router>                  
-            <div className="container"> 
+            <div className="container">
+               
                 <div className="menu">
                     <Menu/>
                 </div>
+
                 <div className="main">
                     <Switch>
                         {routes.map((route, index) => (             

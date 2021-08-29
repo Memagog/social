@@ -6,8 +6,8 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Login from './components/AuthPage/Login';
-import Register from './components/AuthPage/Register';
+import Login from './components/AuthPage/Login/Login';
+import Register from './components/AuthPage/Register/Register';
 function App() {
   return (    
       <Router>          
